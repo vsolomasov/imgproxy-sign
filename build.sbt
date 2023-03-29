@@ -1,4 +1,5 @@
 ThisBuild / scalaVersion := "2.13.10"
+ThisBuild / tpolecatDevModeOptions += ScalacOptions.privateOption("macro-annotations")
 
 lazy val root = (project in file("."))
   .enablePlugins(GitVersioning)
